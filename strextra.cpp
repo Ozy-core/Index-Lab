@@ -1,24 +1,27 @@
-#include "strextra.h"
+#include "strextra.hpp"
 
-int find(string str, char c)
+namespace strextra
 {
-    for(int i=0; i< str.length(); i++)
+    int find(const std::string& s, char c)
     {
-        if(str[i] == c)
+        for(int i=0; i< s.length(); i++)
         {
-            return i;
+            if(s[i] == c)
+            {
+                return i;
+            }
         }
+        return -1;
     }
-    return -1;
-}
 
-int find(string str, string c)
-{
-    size_t index= str.find(c);
-
-    if (str.find(c))
+    int find(const std::string& s, const std::string& c)
     {
-        return index;
+        size_t index= s.find(c);
+
+        if (s.find(c))
+        {
+            return index;
+        }
+        return -1;
     }
-    return -1;
 }
