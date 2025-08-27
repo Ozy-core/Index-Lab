@@ -1,6 +1,4 @@
-#include <string>
-
-using namespace std;
+#include "strextra.h"
 
 int find(string str, char c)
 {

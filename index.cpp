@@ -1,9 +1,6 @@
 #include <iostream>
+#include "strextra.h"
 #include <cassert>
-#include <string>
-#include "strextra.cpp"
-
-using namespace std;
 
 
 
