@@ -17,6 +17,7 @@ int looking_for(string str, char c)
 
 int main()
 {
-
-    return 0;
+    cout << looking_for("game",'a') << endl;
+    cout << looking_for ("game", 'e')<< endl;
+    cout << looking_for("game", 'r') <<endl;
 }
